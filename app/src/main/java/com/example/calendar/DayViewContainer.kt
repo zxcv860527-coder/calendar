@@ -10,3 +10,4 @@ class DayViewContainer(view: View) : ViewContainer(view) {
     // With ViewBinding
     // val textView = CalendarDayLayoutBinding.bind(view).calendarDayText
 }
+
