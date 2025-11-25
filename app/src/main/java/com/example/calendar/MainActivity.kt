@@ -34,5 +34,11 @@ class MainActivity : AppCompatActivity() {
                 container.textView.text = data.date.dayOfMonth.toString()
             }
         }
+        val currentMonth = YearMonth.now()
+        val startMonth = currentMonth.minusMonths(100) // Adjust as needed
+        val endMonth = currentMonth.plusMonths(100) // Adjust as needed
+        val firstDayOfWeek = firstDayOfWeekFromLocale() // Available from the library
+        calendarView.setup(startMonth, endMonth, firstDayOfWeek)
+        calendarView.scrollToMonth(currentMonth)
     }
 }
