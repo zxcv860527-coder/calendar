@@ -16,5 +16,4 @@
         app:cv_dayViewResource="@layout/calendar_day_layout" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
