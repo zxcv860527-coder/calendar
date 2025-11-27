@@ -10,8 +10,6 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="-118dp"
-        tools:layout_editor_absoluteY="-75dp"
         tools:text="22" />
 
 
