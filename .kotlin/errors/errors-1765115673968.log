@@ -1,0 +1,1047 @@
+kotlin version: 2.2.21
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN name:onCreate visibility:protected modality:OPEN returnType:kotlin.Unit
+  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity
+  VALUE_PARAMETER kind:Regular name:savedInstanceState index:1 type:android.os.Bundle?
+  overridden:
+    protected/*protected and package*/ open fun onCreate (p0: @[EnhancedNullability] android.os.Bundle?): kotlin.Unit [fake_override] declared in androidx.appcompat.app.AppCompatActivity
+  BLOCK_BODY
+    CALL 'protected/*protected and package*/ open fun onCreate (p0: @[EnhancedNullability] android.os.Bundle?): kotlin.Unit [fake_override] declared in androidx.appcompat.app.AppCompatActivity' superQualifier='CLASS IR_EXTERNAL_JAVA_DECLARATION_STUB CLASS name:AppCompatActivity modality:OPEN visibility:public superTypes:[androidx.fragment.app.FragmentActivity; androidx.appcompat.app.AppCompatCallback; androidx.core.app.TaskStackBuilder.SupportParentable; androidx.appcompat.app.ActionBarDrawerToggle.DelegateProvider]' type=kotlin.Unit origin=null
+      ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+      ARG p0: GET_VAR 'savedInstanceState: android.os.Bundle? declared in com.example.calendar.MainActivity.onCreate' type=android.os.Bundle? origin=null
+    CALL 'public final fun enableEdgeToEdge$default (<this>: androidx.activity.ComponentActivity, statusBarStyle: androidx.activity.SystemBarStyle?, navigationBarStyle: androidx.activity.SystemBarStyle?, $mask0: kotlin.Int, $handler: kotlin.Any?): kotlin.Unit declared in androidx.activity.EdgeToEdge' type=kotlin.Unit origin=DEFAULT_DISPATCH_CALL
+      ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+      ARG statusBarStyle: COMPOSITE type=androidx.activity.SystemBarStyle? origin=DEFAULT_VALUE
+        CONST Null type=androidx.activity.SystemBarStyle? value=null
+      ARG navigationBarStyle: COMPOSITE type=androidx.activity.SystemBarStyle? origin=DEFAULT_VALUE
+        CONST Null type=androidx.activity.SystemBarStyle? value=null
+      ARG $mask0: CONST Int type=kotlin.Int value=3
+      ARG $handler: CONST Null type=kotlin.Any? value=null
+    CALL 'public open fun setContentView (p0: kotlin.Int): kotlin.Unit [fake_override] declared in com.example.calendar.MainActivity' type=kotlin.Unit origin=null
+      ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+      ARG p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:activity_main type:kotlin.Int visibility:public [static] declared in com.example.calendar.R.layout' type=kotlin.Int superQualifierSymbol=com.example.calendar.R.layout origin=null
+    CALL 'public open fun setOnApplyWindowInsetsListener (p0: @[NonNull] @[EnhancedNullability] android.view.View, p1: @[Nullable] @[EnhancedNullability] androidx.core.view.OnApplyWindowInsetsListener?): kotlin.Unit declared in androidx.core.view.ViewCompat' type=kotlin.Unit origin=null
+      ARG p0: CALL 'public open fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of com.example.calendar.MainActivity.findViewById? [fake_override] declared in com.example.calendar.MainActivity' type=@[FlexibleNullability] android.view.View? origin=null
+        TYPE_ARG T: @[FlexibleNullability] android.view.View?
+        ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+        ARG p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:main type:kotlin.Int visibility:public [static] declared in com.example.calendar.R.id' type=kotlin.Int superQualifierSymbol=com.example.calendar.R.id origin=null
+      ARG p1: BLOCK type=@[Nullable] androidx.core.view.OnApplyWindowInsetsListener origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=@[Nullable] androidx.core.view.OnApplyWindowInsetsListener origin=null
+          TYPE_ARG T: @[Nullable] androidx.core.view.OnApplyWindowInsetsListener
+          ARG dynamicCall: CALL 'public final fun onApplyWindowInsets (): @[Nullable] androidx.core.view.OnApplyWindowInsetsListener declared in kotlin.jvm.internal.invokeDynamic' type=@[Nullable] androidx.core.view.OnApplyWindowInsetsListener origin=null
+          ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+            ARG tag: CONST Int type=kotlin.Int value=6
+            ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+            ARG name: CONST String type=kotlin.String value="metafactory"
+            ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+            ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+          ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun onApplyWindowInsets (p0: @[NonNull] @[EnhancedNullability] android.view.View, p1: @[NonNull] @[EnhancedNullability] androidx.core.view.WindowInsetsCompat): @[NonNull] @[EnhancedNullability] androidx.core.view.WindowInsetsCompat declared in androidx.core.view.OnApplyWindowInsetsListener' type=kotlin.Any
+            RAW_FUNCTION_REFERENCE 'private final fun onCreate$lambda$0 (v: @[EnhancedNullability] @[NonNull] android.view.View, insets: @[EnhancedNullability] @[NonNull] androidx.core.view.WindowInsetsCompat): @[EnhancedNullability] @[NonNull] androidx.core.view.WindowInsetsCompat declared in com.example.calendar.MainActivity' type=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun onApplyWindowInsets (p0: @[NonNull] @[EnhancedNullability] android.view.View, p1: @[NonNull] @[EnhancedNullability] androidx.core.view.WindowInsetsCompat): @[NonNull] @[EnhancedNullability] androidx.core.view.WindowInsetsCompat [fake_override] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+    VAR name:floatingActionButtonView type:@[FlexibleNullability] com.google.android.material.floatingactionbutton.FloatingActionButton? [val]
+      CALL 'public open fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of com.example.calendar.MainActivity.findViewById? [fake_override] declared in com.example.calendar.MainActivity' type=@[FlexibleNullability] com.google.android.material.floatingactionbutton.FloatingActionButton? origin=null
+        TYPE_ARG T: @[FlexibleNullability] com.google.android.material.floatingactionbutton.FloatingActionButton?
+        ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+        ARG p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:floatingActionButton type:kotlin.Int visibility:public [static] declared in com.example.calendar.R.id' type=kotlin.Int superQualifierSymbol=com.example.calendar.R.id origin=null
+    VAR name:calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? [val]
+      CALL 'public open fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of com.example.calendar.MainActivity.findViewById? [fake_override] declared in com.example.calendar.MainActivity' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+        TYPE_ARG T: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?
+        ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+        ARG p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:calendarView type:kotlin.Int visibility:public [static] declared in com.example.calendar.R.id' type=kotlin.Int superQualifierSymbol=com.example.calendar.R.id origin=null
+    CALL 'public final fun <set-dayBinder> (value: com.kizitonwose.calendar.view.MonthDayBinder<*>?): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=EQ
+      ARG <this>: GET_VAR 'val calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+      ARG value: BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=OBJECT_LITERAL
+        CLASS CLASS name:<no name provided> modality:FINAL visibility:local superTypes:[com.kizitonwose.calendar.view.MonthDayBinder<com.example.calendar.DayViewContainer>]
+          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>
+          CONSTRUCTOR visibility:public/*package*/ returnType:com.example.calendar.MainActivity.onCreate.<no name provided> [primary]
+            BLOCK_BODY
+              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+              BLOCK type=kotlin.Unit origin=null
+          FUN name:create visibility:public modality:OPEN returnType:com.example.calendar.DayViewContainer
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER kind:Regular name:view index:1 type:android.view.View
+            overridden:
+              public abstract fun create (view: android.view.View): Container of com.kizitonwose.calendar.view.MonthDayBinder [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.example.calendar.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                CONSTRUCTOR_CALL 'public constructor <init> (view: android.view.View) [primary] declared in com.example.calendar.DayViewContainer' type=com.example.calendar.DayViewContainer origin=null
+                  ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.create' type=android.view.View origin=null
+          FUN name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER kind:Regular name:container index:1 type:com.example.calendar.DayViewContainer
+            VALUE_PARAMETER kind:Regular name:data index:2 type:com.kizitonwose.calendar.core.CalendarDay
+            overridden:
+              public abstract fun bind (container: Container of com.kizitonwose.calendar.view.MonthDayBinder, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+            BLOCK_BODY
+              CALL 'public final fun setText (p0: @[FlexibleNullability] kotlin.CharSequence?): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=EQ
+                ARG <this>: CALL 'public final fun <get-textView> (): @[FlexibleNullability] android.widget.TextView? declared in com.example.calendar.DayViewContainer' type=@[FlexibleNullability] android.widget.TextView? origin=GET_PROPERTY
+                  ARG <this>: GET_VAR 'container: com.example.calendar.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.DayViewContainer origin=null
+                ARG p0: CALL 'public final fun valueOf (value: kotlin.Int): kotlin.String declared in java.lang.String' type=kotlin.String origin=null
+                  ARG value: CALL 'public open fun getDayOfMonth (): kotlin.Int declared in java.time.LocalDate' type=kotlin.Int origin=GET_PROPERTY
+                    ARG <this>: CALL 'public final fun <get-date> (): java.time.LocalDate declared in com.kizitonwose.calendar.core.CalendarDay' type=java.time.LocalDate origin=GET_PROPERTY
+                      ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+          FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+            VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+            overridden:
+              public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.MonthDayBinder
+          FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+            overridden:
+              public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+          FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+            overridden:
+              public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+          FUN BRIDGE name:create visibility:public modality:OPEN returnType:com.kizitonwose.calendar.view.ViewContainer
+            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER BRIDGE kind:Regular name:view index:1 type:android.view.View
+            EXPRESSION_BODY
+              TYPE_OP type=com.kizitonwose.calendar.view.ViewContainer origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.view.ViewContainer
+                RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                  CALL 'public open fun create (view: android.view.View): com.example.calendar.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.DayViewContainer origin=BRIDGE_DELEGATION
+                    ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                    ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.create' type=android.view.View origin=null
+          FUN BRIDGE name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER BRIDGE kind:Regular name:container index:1 type:com.kizitonwose.calendar.view.ViewContainer
+            VALUE_PARAMETER BRIDGE kind:Regular name:data index:2 type:kotlin.Any?
+            EXPRESSION_BODY
+              TYPE_OP type=kotlin.Unit origin=IMPLICIT_CAST typeOperand=kotlin.Unit
+                RETURN type=kotlin.Nothing from='public open fun bind (container: com.kizitonwose.calendar.view.ViewContainer, data: kotlin.Any?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                  CALL 'public open fun bind (container: com.example.calendar.DayViewContainer, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                    ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                    ARG container: TYPE_OP type=com.example.calendar.DayViewContainer origin=IMPLICIT_CAST typeOperand=com.example.calendar.DayViewContainer
+                      GET_VAR 'container: com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.kizitonwose.calendar.view.ViewContainer origin=null
+                    ARG data: TYPE_OP type=com.kizitonwose.calendar.core.CalendarDay origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.core.CalendarDay
+                      GET_VAR 'data: kotlin.Any? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=kotlin.Any? origin=null
+        BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+          CONSTRUCTOR_CALL 'public/*package*/ constructor <init> () [primary] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=OBJECT_LITERAL
+    VAR name:currentMonth type:@[FlexibleNullability] java.time.YearMonth? [val]
+      CALL 'public open fun now (): @[FlexibleNullability] java.time.YearMonth? declared in java.time.YearMonth' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+    VAR name:startMonth type:@[FlexibleNullability] java.time.YearMonth? [val]
+      CALL 'public open fun minusMonths (p0: kotlin.Long): @[FlexibleNullability] java.time.YearMonth? declared in java.time.YearMonth' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        ARG <this>: GET_VAR 'val currentMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        ARG p0: CONST Long type=kotlin.Long value=100
+    VAR name:endMonth type:@[FlexibleNullability] java.time.YearMonth? [val]
+      CALL 'public open fun plusMonths (p0: kotlin.Long): @[FlexibleNullability] java.time.YearMonth? declared in java.time.YearMonth' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        ARG <this>: GET_VAR 'val currentMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        ARG p0: CONST Long type=kotlin.Long value=100
+    VAR name:firstDayOfWeek type:java.time.DayOfWeek [val]
+      CALL 'public final fun firstDayOfWeekFromLocale$default (locale: java.util.Locale?, $mask0: kotlin.Int, $handler: kotlin.Any?): java.time.DayOfWeek declared in com.kizitonwose.calendar.core.ExtensionsKt' type=java.time.DayOfWeek origin=DEFAULT_DISPATCH_CALL
+        ARG locale: COMPOSITE type=java.util.Locale? origin=DEFAULT_VALUE
+          CONST Null type=java.util.Locale? value=null
+        ARG $mask0: CONST Int type=kotlin.Int value=1
+        ARG $handler: CONST Null type=kotlin.Any? value=null
+    CALL 'public final fun setup (startMonth: java.time.YearMonth, endMonth: java.time.YearMonth, firstDayOfWeek: java.time.DayOfWeek): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=null
+      ARG <this>: GET_VAR 'val calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+      ARG startMonth: COMPOSITE type=java.time.YearMonth origin=null
+        CALL 'public final fun checkNotNull (object: kotlin.Any?): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+          ARG object: GET_VAR 'val startMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        GET_VAR 'val startMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+      ARG endMonth: COMPOSITE type=java.time.YearMonth origin=null
+        CALL 'public final fun checkNotNull (object: kotlin.Any?): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+          ARG object: GET_VAR 'val endMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        GET_VAR 'val endMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+      ARG firstDayOfWeek: GET_VAR 'val firstDayOfWeek: java.time.DayOfWeek [val] declared in com.example.calendar.MainActivity.onCreate' type=java.time.DayOfWeek origin=null
+    CALL 'public final fun scrollToMonth (month: java.time.YearMonth): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=null
+      ARG <this>: GET_VAR 'val calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+      ARG month: COMPOSITE type=java.time.YearMonth origin=null
+        CALL 'public final fun checkNotNull (object: kotlin.Any?): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+          ARG object: GET_VAR 'val currentMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+        GET_VAR 'val currentMonth: @[FlexibleNullability] java.time.YearMonth? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] java.time.YearMonth? origin=null
+    VAR name:daysOfWeek type:kotlin.collections.List<java.time.DayOfWeek> [val]
+      CALL 'public final fun daysOfWeek$default (firstDayOfWeek: java.time.DayOfWeek?, $mask0: kotlin.Int, $handler: kotlin.Any?): kotlin.collections.List<java.time.DayOfWeek> declared in com.kizitonwose.calendar.core.ExtensionsKt' type=kotlin.collections.List<java.time.DayOfWeek> origin=DEFAULT_DISPATCH_CALL
+        ARG firstDayOfWeek: COMPOSITE type=java.time.DayOfWeek? origin=DEFAULT_VALUE
+          CONST Null type=java.time.DayOfWeek? value=null
+        ARG $mask0: CONST Int type=kotlin.Int value=1
+        ARG $handler: CONST Null type=kotlin.Any? value=null
+    VAR name:titlesContainer type:@[FlexibleNullability] android.view.ViewGroup? [val]
+      CALL 'public open fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of com.example.calendar.MainActivity.findViewById? [fake_override] declared in com.example.calendar.MainActivity' type=@[FlexibleNullability] android.view.ViewGroup? origin=null
+        TYPE_ARG T: @[FlexibleNullability] android.view.ViewGroup?
+        ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity declared in com.example.calendar.MainActivity.onCreate' type=com.example.calendar.MainActivity origin=IMPLICIT_ARGUMENT
+        ARG p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:titlesContainer type:kotlin.Int visibility:public [static] declared in com.example.calendar.R.id' type=kotlin.Int superQualifierSymbol=com.example.calendar.R.id origin=null
+    CALL 'public final fun forEachIndexed <T> (<this>: kotlin.sequences.Sequence<T of kotlin.sequences.SequencesKt.forEachIndexed>, action: kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, T of kotlin.sequences.SequencesKt.forEachIndexed, kotlin.Unit>): kotlin.Unit [inline] declared in kotlin.sequences.SequencesKt' type=kotlin.Unit origin=null
+      TYPE_ARG T: android.widget.TextView
+      ARG <this>: CALL 'public final fun map <T, R> (<this>: kotlin.sequences.Sequence<T of kotlin.sequences.SequencesKt.map>, transform: kotlin.Function1<T of kotlin.sequences.SequencesKt.map, R of kotlin.sequences.SequencesKt.map>): kotlin.sequences.Sequence<R of kotlin.sequences.SequencesKt.map> declared in kotlin.sequences.SequencesKt' type=kotlin.sequences.Sequence<android.widget.TextView> origin=null
+        TYPE_ARG T: android.view.View
+        TYPE_ARG R: android.widget.TextView
+        ARG <this>: CALL 'public final fun <get-children> (<this>: android.view.ViewGroup): kotlin.sequences.Sequence<android.view.View> declared in androidx.core.view.ViewGroupKt' type=kotlin.sequences.Sequence<android.view.View> origin=GET_PROPERTY
+          ARG <this>: COMPOSITE type=android.view.ViewGroup origin=null
+            CALL 'public final fun checkNotNull (object: kotlin.Any?): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+              ARG object: GET_VAR 'val titlesContainer: @[FlexibleNullability] android.view.ViewGroup? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] android.view.ViewGroup? origin=null
+            GET_VAR 'val titlesContainer: @[FlexibleNullability] android.view.ViewGroup? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] android.view.ViewGroup? origin=null
+        ARG transform: BLOCK type=kotlin.Function1<android.view.View, android.widget.TextView> origin=LAMBDA
+          COMPOSITE type=kotlin.Unit origin=null
+          CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=kotlin.Function1<android.view.View, android.widget.TextView> origin=null
+            TYPE_ARG T: kotlin.Function1<android.view.View, android.widget.TextView>
+            ARG dynamicCall: CALL 'public final fun invoke (): kotlin.Function1<android.view.View, android.widget.TextView> declared in kotlin.jvm.internal.invokeDynamic' type=kotlin.Function1<android.view.View, android.widget.TextView> origin=null
+            ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              ARG tag: CONST Int type=kotlin.Int value=6
+              ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+              ARG name: CONST String type=kotlin.String value="metafactory"
+              ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+              ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+            ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+              CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1' type=kotlin.Any
+              RAW_FUNCTION_REFERENCE 'private final fun onCreate$lambda$1 (it: android.view.View): android.widget.TextView declared in com.example.calendar.MainActivity' type=kotlin.Any
+              CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: android.view.View): android.widget.TextView [fake_override,operator] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+      ARG action: BLOCK type=kotlin.Function2<kotlin.Int, android.widget.TextView, kotlin.Unit> origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        FUNCTION_REFERENCE 'private final fun onCreate$lambda$2 ($daysOfWeek: kotlin.collections.List<java.time.DayOfWeek>, index: kotlin.Int, textView: android.widget.TextView): kotlin.Unit declared in com.example.calendar.MainActivity' type=kotlin.Function2<kotlin.Int, android.widget.TextView, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+          ARG $daysOfWeek: GET_VAR 'val daysOfWeek: kotlin.collections.List<java.time.DayOfWeek> [val] declared in com.example.calendar.MainActivity.onCreate' type=kotlin.collections.List<java.time.DayOfWeek> origin=null
+    CLASS CLASS name:MonthViewContainer modality:FINAL visibility:local superTypes:[com.kizitonwose.calendar.view.ViewContainer]
+      thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.MonthViewContainer
+      CONSTRUCTOR visibility:public returnType:com.example.calendar.MainActivity.onCreate.MonthViewContainer [primary]
+        VALUE_PARAMETER kind:Regular name:view index:0 type:android.view.View
+        BLOCK_BODY
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (view: android.view.View) [primary] declared in com.kizitonwose.calendar.view.ViewContainer'
+            ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer.<init>' type=android.view.View origin=null
+          BLOCK type=kotlin.Unit origin=null
+            SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:titlesContainer type:android.view.ViewGroup visibility:private [final]' type=kotlin.Unit origin=INITIALIZE_FIELD
+              receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+              value: BLOCK type=android.view.ViewGroup origin=null
+                CALL 'public final fun checkNotNull (object: kotlin.Any?, message: kotlin.String): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+                  ARG object: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer.<init>' type=android.view.View origin=null
+                  ARG message: CONST String type=kotlin.String value="null cannot be cast to non-null type android.view.ViewGroup"
+                TYPE_OP type=android.view.ViewGroup? origin=CAST typeOperand=android.view.ViewGroup?
+                  GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer.<init>' type=android.view.View origin=null
+      FIELD PROPERTY_BACKING_FIELD name:titlesContainer type:android.view.ViewGroup visibility:private [final]
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-titlesContainer> visibility:public modality:FINAL returnType:android.view.ViewGroup
+        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.MonthViewContainer
+        correspondingProperty: PROPERTY name:titlesContainer visibility:public modality:FINAL [val]
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:titlesContainer type:android.view.ViewGroup visibility:private [final]' type=android.view.ViewGroup origin=null
+              receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer.<get-titlesContainer>' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+      FUN FAKE_OVERRIDE name:<get-view> visibility:public modality:FINAL returnType:android.view.View [fake_override]
+        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.kizitonwose.calendar.view.ViewContainer
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:view visibility:public modality:FINAL [fake_override,val]
+        overridden:
+          public final fun <get-view> (): android.view.View declared in com.kizitonwose.calendar.view.ViewContainer
+      FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+        VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+        overridden:
+          public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.ViewContainer
+      FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+        overridden:
+          public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.ViewContainer
+      FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+        overridden:
+          public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.ViewContainer
+    CALL 'public final fun <set-monthHeaderBinder> (value: com.kizitonwose.calendar.view.MonthHeaderFooterBinder<*>?): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=EQ
+      ARG <this>: GET_VAR 'val calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+      ARG value: BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=OBJECT_LITERAL
+        CLASS CLASS name:<no name provided> modality:FINAL visibility:local superTypes:[com.kizitonwose.calendar.view.MonthHeaderFooterBinder<com.example.calendar.MainActivity.onCreate.MonthViewContainer>]
+          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>
+          CONSTRUCTOR visibility:public/*package*/ returnType:com.example.calendar.MainActivity.onCreate.<no name provided> [primary]
+            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$calendarView index:0 type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?
+            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$daysOfWeek index:1 type:kotlin.collections.List<java.time.DayOfWeek>
+            BLOCK_BODY
+              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                value: GET_VAR '$calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.<init>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$daysOfWeek type:kotlin.collections.List<java.time.DayOfWeek> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                value: GET_VAR '$daysOfWeek: kotlin.collections.List<java.time.DayOfWeek> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.<init>' type=kotlin.collections.List<java.time.DayOfWeek> origin=null
+              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+              BLOCK type=kotlin.Unit origin=null
+          FUN name:create visibility:public modality:OPEN returnType:com.example.calendar.MainActivity.onCreate.MonthViewContainer
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER kind:Regular name:view index:1 type:android.view.View
+            overridden:
+              public abstract fun create (view: android.view.View): Container of com.kizitonwose.calendar.view.MonthHeaderFooterBinder [fake_override] declared in com.kizitonwose.calendar.view.MonthHeaderFooterBinder
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                CONSTRUCTOR_CALL 'public constructor <init> (view: android.view.View) [primary] declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+                  ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.create' type=android.view.View origin=null
+          FUN name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER kind:Regular name:container index:1 type:com.example.calendar.MainActivity.onCreate.MonthViewContainer
+            VALUE_PARAMETER kind:Regular name:data index:2 type:com.kizitonwose.calendar.core.CalendarMonth
+            overridden:
+              public abstract fun bind (container: Container of com.kizitonwose.calendar.view.MonthHeaderFooterBinder, data: com.kizitonwose.calendar.core.CalendarMonth): kotlin.Unit [fake_override] declared in com.kizitonwose.calendar.view.MonthHeaderFooterBinder
+            BLOCK_BODY
+              WHEN type=kotlin.Unit origin=IF
+                BRANCH
+                  if: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=EQEQ
+                    ARG arg0: CALL 'public open fun getTag (): @[FlexibleNullability] kotlin.Any? [fake_override] declared in android.view.ViewGroup' type=@[FlexibleNullability] kotlin.Any? origin=GET_PROPERTY
+                      ARG <this>: CALL 'public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=android.view.ViewGroup origin=GET_PROPERTY
+                        ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+                    ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                  then: BLOCK type=kotlin.Unit origin=null
+                    CALL 'public open fun setTag (p0: @[FlexibleNullability] kotlin.Any?): kotlin.Unit [fake_override] declared in android.view.ViewGroup' type=kotlin.Unit origin=EQ
+                      ARG <this>: CALL 'public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=android.view.ViewGroup origin=GET_PROPERTY
+                        ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+                      ARG p0: CALL 'public final fun <get-yearMonth> (): java.time.YearMonth declared in com.kizitonwose.calendar.core.CalendarMonth' type=java.time.YearMonth origin=GET_PROPERTY
+                        ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarMonth declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarMonth origin=null
+                    CALL 'public final fun forEachIndexed <T> (<this>: kotlin.sequences.Sequence<T of kotlin.sequences.SequencesKt.forEachIndexed>, action: kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, T of kotlin.sequences.SequencesKt.forEachIndexed, kotlin.Unit>): kotlin.Unit [inline] declared in kotlin.sequences.SequencesKt' type=kotlin.Unit origin=null
+                      TYPE_ARG T: android.widget.TextView
+                      ARG <this>: CALL 'public final fun map <T, R> (<this>: kotlin.sequences.Sequence<T of kotlin.sequences.SequencesKt.map>, transform: kotlin.Function1<T of kotlin.sequences.SequencesKt.map, R of kotlin.sequences.SequencesKt.map>): kotlin.sequences.Sequence<R of kotlin.sequences.SequencesKt.map> declared in kotlin.sequences.SequencesKt' type=kotlin.sequences.Sequence<android.widget.TextView> origin=null
+                        TYPE_ARG T: android.view.View
+                        TYPE_ARG R: android.widget.TextView
+                        ARG <this>: CALL 'public final fun <get-children> (<this>: android.view.ViewGroup): kotlin.sequences.Sequence<android.view.View> declared in androidx.core.view.ViewGroupKt' type=kotlin.sequences.Sequence<android.view.View> origin=GET_PROPERTY
+                          ARG <this>: CALL 'public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=android.view.ViewGroup origin=GET_PROPERTY
+                            ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+                        ARG transform: BLOCK type=kotlin.Function1<android.view.View, android.widget.TextView> origin=LAMBDA
+                          COMPOSITE type=kotlin.Unit origin=null
+                          CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=kotlin.Function1<android.view.View, android.widget.TextView> origin=null
+                            TYPE_ARG T: kotlin.Function1<android.view.View, android.widget.TextView>
+                            ARG dynamicCall: CALL 'public final fun invoke (): kotlin.Function1<android.view.View, android.widget.TextView> declared in kotlin.jvm.internal.invokeDynamic' type=kotlin.Function1<android.view.View, android.widget.TextView> origin=null
+                            ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                              ARG tag: CONST Int type=kotlin.Int value=6
+                              ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+                              ARG name: CONST String type=kotlin.String value="metafactory"
+                              ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+                              ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+                            ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+                              CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                                ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1' type=kotlin.Any
+                              RAW_FUNCTION_REFERENCE 'private final fun bind$lambda$0 (it: android.view.View): android.widget.TextView declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Any
+                              CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                                ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: android.view.View): android.widget.TextView [fake_override,operator] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+                      ARG action: BLOCK type=kotlin.Function2<kotlin.Int, android.widget.TextView, kotlin.Unit> origin=LAMBDA
+                        COMPOSITE type=kotlin.Unit origin=null
+                        FUNCTION_REFERENCE 'private final fun bind$lambda$1 ($daysOfWeek: kotlin.collections.List<java.time.DayOfWeek>, index: kotlin.Int, textView: android.widget.TextView): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Function2<kotlin.Int, android.widget.TextView, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+                          ARG $daysOfWeek: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$daysOfWeek type:kotlin.collections.List<java.time.DayOfWeek> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.collections.List<java.time.DayOfWeek> origin=null
+                            receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                    CALL 'public final fun <set-dayBinder> (value: com.kizitonwose.calendar.view.MonthDayBinder<*>?): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=EQ
+                      ARG <this>: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+                        receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                      ARG value: BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=OBJECT_LITERAL
+                        CLASS CLASS name:<no name provided> modality:FINAL visibility:local superTypes:[com.kizitonwose.calendar.view.MonthDayBinder<com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer>]
+                          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                          CONSTRUCTOR visibility:public/*package*/ returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> [primary]
+                            VALUE_PARAMETER BOUND_RECEIVER_PARAMETER kind:Regular name:this$0 index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$calendarView index:1 type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?
+                            VALUE_PARAMETER BOUND_RECEIVER_PARAMETER kind:Regular name:this$1 index:2 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+                            BLOCK_BODY
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                                value: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                              BLOCK type=kotlin.Unit origin=null
+                          FUN name:create visibility:public modality:OPEN returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                            VALUE_PARAMETER kind:Regular name:view index:1 type:android.view.View
+                            overridden:
+                              public abstract fun create (view: android.view.View): Container of com.kizitonwose.calendar.view.MonthDayBinder [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                            BLOCK_BODY
+                              RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>'
+                                CONSTRUCTOR_CALL 'public constructor <init> (this$0: com.example.calendar.MainActivity.onCreate.<no name provided>, view: android.view.View) declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                  ARG this$0: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                                    receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                                  ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=android.view.View origin=null
+                          FUN name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+                            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                            VALUE_PARAMETER kind:Regular name:container index:1 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                            VALUE_PARAMETER kind:Regular name:data index:2 type:com.kizitonwose.calendar.core.CalendarDay
+                            overridden:
+                              public abstract fun bind (container: Container of com.kizitonwose.calendar.view.MonthDayBinder, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                            BLOCK_BODY
+                              COMPOSITE type=kotlin.Unit origin=null
+                                BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                  WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                    BRANCH
+                                      if: COMPOSITE type=kotlin.Boolean origin=null
+                                        VAR IR_TEMPORARY_VARIABLE name:tmp0_safe_receiver type:android.widget.TextView? [val]
+                                          CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                            ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                        CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                          ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                            ARG arg0: GET_VAR 'val tmp0_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                            ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                                      then: CALL 'public final fun setText (p0: @[FlexibleNullability] kotlin.CharSequence?): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=EQ
+                                        ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                          GET_VAR 'val tmp0_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                        ARG p0: CALL 'public final fun valueOf (value: kotlin.Int): kotlin.String declared in java.lang.String' type=kotlin.String origin=null
+                                          ARG value: CALL 'public open fun getDayOfMonth (): kotlin.Int declared in java.time.LocalDate' type=kotlin.Int origin=GET_PROPERTY
+                                            ARG <this>: CALL 'public final fun <get-date> (): java.time.LocalDate declared in com.kizitonwose.calendar.core.CalendarDay' type=java.time.LocalDate origin=GET_PROPERTY
+                                              ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+                                    BRANCH
+                                      if: CONST Boolean type=kotlin.Boolean value=true
+                                      then: CONST Null type=kotlin.Nothing? value=null
+                              COMPOSITE type=kotlin.Unit origin=null
+                                WHEN type=kotlin.Unit? origin=IF
+                                  BRANCH
+                                    if: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=EQEQ
+                                      ARG arg0: CALL 'public final fun <get-position> (): com.kizitonwose.calendar.core.DayPosition declared in com.kizitonwose.calendar.core.CalendarDay' type=com.kizitonwose.calendar.core.DayPosition origin=GET_PROPERTY
+                                        ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+                                      ARG arg1: GET_FIELD 'FIELD FIELD_FOR_ENUM_ENTRY name:MonthDate type:com.kizitonwose.calendar.core.DayPosition visibility:public [final,static] declared in com.kizitonwose.calendar.core.DayPosition' type=com.kizitonwose.calendar.core.DayPosition origin=null
+                                    then: BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                      WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                        BRANCH
+                                          if: COMPOSITE type=kotlin.Boolean origin=null
+                                            VAR IR_TEMPORARY_VARIABLE name:tmp1_safe_receiver type:android.widget.TextView? [val]
+                                              CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                                ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                            CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                              ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                                ARG arg0: GET_VAR 'val tmp1_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                                ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                                          then: CALL 'public open fun setTextColor (p0: kotlin.Int): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=null
+                                            ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                              GET_VAR 'val tmp1_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                            ARG p0: CONST Int type=kotlin.Int value=-1
+                                        BRANCH
+                                          if: CONST Boolean type=kotlin.Boolean value=true
+                                          then: CONST Null type=kotlin.Nothing? value=null
+                                  BRANCH
+                                    if: CONST Boolean type=kotlin.Boolean value=true
+                                    then: BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                      WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                        BRANCH
+                                          if: COMPOSITE type=kotlin.Boolean origin=null
+                                            VAR IR_TEMPORARY_VARIABLE name:tmp2_safe_receiver type:android.widget.TextView? [val]
+                                              CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                                ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                            CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                              ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                                ARG arg0: GET_VAR 'val tmp2_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                                ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                                          then: CALL 'public open fun setTextColor (p0: kotlin.Int): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=null
+                                            ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                              GET_VAR 'val tmp2_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                            ARG p0: CONST Int type=kotlin.Int value=-7829368
+                                        BRANCH
+                                          if: CONST Boolean type=kotlin.Boolean value=true
+                                          then: CONST Null type=kotlin.Nothing? value=null
+                          FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+                            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                            VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+                            overridden:
+                              public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                          FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+                            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                            overridden:
+                              public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                          FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+                            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                            overridden:
+                              public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final]
+                          FUN BRIDGE name:create visibility:public modality:OPEN returnType:com.kizitonwose.calendar.view.ViewContainer
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                            VALUE_PARAMETER BRIDGE kind:Regular name:view index:1 type:android.view.View
+                            EXPRESSION_BODY
+                              TYPE_OP type=com.kizitonwose.calendar.view.ViewContainer origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.view.ViewContainer
+                                RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>'
+                                  CALL 'public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=BRIDGE_DELEGATION
+                                    ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                                    ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=android.view.View origin=null
+                          FUN BRIDGE name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                            VALUE_PARAMETER BRIDGE kind:Regular name:container index:1 type:com.kizitonwose.calendar.view.ViewContainer
+                            VALUE_PARAMETER BRIDGE kind:Regular name:data index:2 type:kotlin.Any?
+                            EXPRESSION_BODY
+                              TYPE_OP type=kotlin.Unit origin=IMPLICIT_CAST typeOperand=kotlin.Unit
+                                RETURN type=kotlin.Nothing from='public open fun bind (container: com.kizitonwose.calendar.view.ViewContainer, data: kotlin.Any?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>'
+                                  CALL 'public open fun bind (container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                                    ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                                    ARG container: TYPE_OP type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=IMPLICIT_CAST typeOperand=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                                      GET_VAR 'container: com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.kizitonwose.calendar.view.ViewContainer origin=null
+                                    ARG data: TYPE_OP type=com.kizitonwose.calendar.core.CalendarDay origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.core.CalendarDay
+                                      GET_VAR 'data: kotlin.Any? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=kotlin.Any? origin=null
+                        BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                          CONSTRUCTOR_CALL 'public/*package*/ constructor <init> (this$0: com.example.calendar.MainActivity.onCreate.<no name provided>, $calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?, this$1: com.example.calendar.MainActivity.onCreate.<no name provided>) [primary] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=OBJECT_LITERAL
+                            ARG this$0: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                            ARG $calendarView: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+                              receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                            ARG this$1: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+          CLASS CLASS name:DayViewContainer modality:FINAL visibility:local [inner] superTypes:[com.kizitonwose.calendar.view.ViewContainer]
+            thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+            CONSTRUCTOR visibility:public returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+              VALUE_PARAMETER FIELD_FOR_OUTER_THIS kind:Regular name:this$0 index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+              VALUE_PARAMETER kind:Regular name:view index:1 type:android.view.View
+              BLOCK_BODY
+                SET_FIELD 'FIELD FIELD_FOR_OUTER_THIS name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=kotlin.Unit origin=null
+                  receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                  value: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (view: android.view.View) [primary] declared in com.kizitonwose.calendar.view.ViewContainer'
+                  ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=android.view.View origin=null
+                BLOCK type=kotlin.Unit origin=null
+                SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:textView type:android.widget.TextView? visibility:private [final]' type=kotlin.Unit superQualifierSymbol=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                  receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                  value: CALL 'public final fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of android.view.View.findViewById? declared in android.view.View' type=@[FlexibleNullability] android.widget.TextView? origin=null
+                    TYPE_ARG T: @[FlexibleNullability] android.widget.TextView?
+                    ARG <this>: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=android.view.View origin=null
+                    ARG p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:calendarView type:kotlin.Int visibility:public [static] declared in com.example.calendar.R.id' type=kotlin.Int superQualifierSymbol=com.example.calendar.R.id origin=null
+                CALL 'public open fun setOnClickListener (p0: @[EnhancedNullability] android.view.View.OnClickListener?): kotlin.Unit declared in android.view.View' type=kotlin.Unit origin=null
+                  ARG <this>: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=android.view.View origin=null
+                  ARG p0: BLOCK type=android.view.View.OnClickListener origin=LAMBDA
+                    COMPOSITE type=kotlin.Unit origin=null
+                    CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=android.view.View.OnClickListener origin=null
+                      TYPE_ARG T: android.view.View.OnClickListener
+                      ARG dynamicCall: CALL 'public final fun onClick (): android.view.View.OnClickListener declared in kotlin.jvm.internal.invokeDynamic' type=android.view.View.OnClickListener origin=null
+                      ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                        ARG tag: CONST Int type=kotlin.Int value=6
+                        ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+                        ARG name: CONST String type=kotlin.String value="metafactory"
+                        ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+                        ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+                      ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+                        CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                          ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun onClick (p0: @[FlexibleNullability] android.view.View?): kotlin.Unit declared in android.view.View.OnClickListener' type=kotlin.Any
+                        RAW_FUNCTION_REFERENCE 'private final fun _init_$lambda$0 (it: @[FlexibleNullability] android.view.View?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=kotlin.Any
+                        CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                          ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun onClick (p0: @[FlexibleNullability] android.view.View?): kotlin.Unit [fake_override] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+                CALL 'public final fun <set-dayBinder> (value: com.kizitonwose.calendar.view.MonthDayBinder<*>?): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=EQ
+                  ARG <this>: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+                    receiver: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                  ARG value: BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=OBJECT_LITERAL
+                    CLASS CLASS name:<no name provided> modality:FINAL visibility:local superTypes:[com.kizitonwose.calendar.view.MonthDayBinder<com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer>]
+                      thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>
+                      CONSTRUCTOR visibility:public/*package*/ returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> [primary]
+                        VALUE_PARAMETER BOUND_RECEIVER_PARAMETER kind:Regular name:this$0 index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+                        VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$calendarView index:1 type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?
+                        BLOCK_BODY
+                          SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                            receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=null
+                            value: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                          BLOCK type=kotlin.Unit origin=null
+                      FUN name:create visibility:public modality:OPEN returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>
+                        VALUE_PARAMETER kind:Regular name:view index:1 type:android.view.View
+                        overridden:
+                          public abstract fun create (view: android.view.View): Container of com.kizitonwose.calendar.view.MonthDayBinder [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                        BLOCK_BODY
+                          RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>'
+                            CONSTRUCTOR_CALL 'public constructor <init> (this$0: com.example.calendar.MainActivity.onCreate.<no name provided>, view: android.view.View) declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                              ARG this$0: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                                receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=null
+                              ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.create' type=android.view.View origin=null
+                      FUN name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+                        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>
+                        VALUE_PARAMETER kind:Regular name:container index:1 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                        VALUE_PARAMETER kind:Regular name:data index:2 type:com.kizitonwose.calendar.core.CalendarDay
+                        overridden:
+                          public abstract fun bind (container: Container of com.kizitonwose.calendar.view.MonthDayBinder, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                        BLOCK_BODY
+                          CALL 'public final fun <set-day> (<set-?>: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=kotlin.Unit origin=EQ
+                            ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                            ARG <set-?>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+                          COMPOSITE type=kotlin.Unit origin=null
+                            BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                              WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                                BRANCH
+                                  if: COMPOSITE type=kotlin.Boolean origin=null
+                                    VAR IR_TEMPORARY_VARIABLE name:tmp0_safe_receiver type:android.widget.TextView? [val]
+                                      CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                        ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                    CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                      ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                        ARG arg0: GET_VAR 'val tmp0_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                        ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                                  then: CALL 'public final fun setText (p0: @[FlexibleNullability] kotlin.CharSequence?): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=EQ
+                                    ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                      GET_VAR 'val tmp0_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                    ARG p0: CALL 'public final fun valueOf (value: kotlin.Int): kotlin.String declared in java.lang.String' type=kotlin.String origin=null
+                                      ARG value: CALL 'public open fun getDayOfMonth (): kotlin.Int declared in java.time.LocalDate' type=kotlin.Int origin=GET_PROPERTY
+                                        ARG <this>: CALL 'public final fun <get-date> (): java.time.LocalDate declared in com.kizitonwose.calendar.core.CalendarDay' type=java.time.LocalDate origin=GET_PROPERTY
+                                          ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+                                BRANCH
+                                  if: CONST Boolean type=kotlin.Boolean value=true
+                                  then: CONST Null type=kotlin.Nothing? value=null
+                      FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+                        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                        VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+                        overridden:
+                          public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                      FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+                        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                        overridden:
+                          public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                      FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+                        VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                        overridden:
+                          public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                      FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final]
+                      FUN BRIDGE name:create visibility:public modality:OPEN returnType:com.kizitonwose.calendar.view.ViewContainer
+                        VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>
+                        VALUE_PARAMETER BRIDGE kind:Regular name:view index:1 type:android.view.View
+                        EXPRESSION_BODY
+                          TYPE_OP type=com.kizitonwose.calendar.view.ViewContainer origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.view.ViewContainer
+                            RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>'
+                              CALL 'public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=BRIDGE_DELEGATION
+                                ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=null
+                                ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.create' type=android.view.View origin=null
+                      FUN BRIDGE name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+                        VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>
+                        VALUE_PARAMETER BRIDGE kind:Regular name:container index:1 type:com.kizitonwose.calendar.view.ViewContainer
+                        VALUE_PARAMETER BRIDGE kind:Regular name:data index:2 type:kotlin.Any?
+                        EXPRESSION_BODY
+                          TYPE_OP type=kotlin.Unit origin=IMPLICIT_CAST typeOperand=kotlin.Unit
+                            RETURN type=kotlin.Nothing from='public open fun bind (container: com.kizitonwose.calendar.view.ViewContainer, data: kotlin.Any?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>'
+                              CALL 'public open fun bind (container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                                ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=null
+                                ARG container: TYPE_OP type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=IMPLICIT_CAST typeOperand=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                                  GET_VAR 'container: com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=com.kizitonwose.calendar.view.ViewContainer origin=null
+                                ARG data: TYPE_OP type=com.kizitonwose.calendar.core.CalendarDay origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.core.CalendarDay
+                                  GET_VAR 'data: kotlin.Any? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>.bind' type=kotlin.Any? origin=null
+                    BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=null
+                      CONSTRUCTOR_CALL 'public/*package*/ constructor <init> (this$0: com.example.calendar.MainActivity.onCreate.<no name provided>, $calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?) [primary] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>.<no name provided> origin=OBJECT_LITERAL
+                        ARG this$0: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                        ARG $calendarView: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+                          receiver: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+            FIELD PROPERTY_BACKING_FIELD name:textView type:android.widget.TextView? visibility:private [final]
+            FUN DEFAULT_PROPERTY_ACCESSOR name:<get-textView> visibility:public modality:FINAL returnType:android.widget.TextView?
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+              correspondingProperty: PROPERTY name:textView visibility:public modality:FINAL [val]
+              BLOCK_BODY
+                RETURN type=kotlin.Nothing from='public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer'
+                  GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:textView type:android.widget.TextView? visibility:private [final]' type=android.widget.TextView? origin=null
+                    receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<get-textView>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+            FIELD PROPERTY_BACKING_FIELD name:day type:com.kizitonwose.calendar.core.CalendarDay? visibility:public
+            FUN DEFAULT_PROPERTY_ACCESSOR name:<get-day> visibility:public modality:FINAL returnType:com.kizitonwose.calendar.core.CalendarDay
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+              correspondingProperty: PROPERTY name:day visibility:public modality:FINAL [lateinit,var]
+              BLOCK_BODY
+                VAR IR_TEMPORARY_VARIABLE name:tmp type:com.kizitonwose.calendar.core.CalendarDay? [val]
+                  GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:day type:com.kizitonwose.calendar.core.CalendarDay? visibility:public' type=com.kizitonwose.calendar.core.CalendarDay? origin=null
+                    receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<get-day>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                WHEN type=kotlin.Nothing origin=null
+                  BRANCH
+                    if: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=EXCLEQ
+                      ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=EXCLEQ
+                        ARG arg0: GET_VAR 'val tmp: com.kizitonwose.calendar.core.CalendarDay? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<get-day>' type=com.kizitonwose.calendar.core.CalendarDay? origin=null
+                        ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                    then: RETURN type=kotlin.Nothing from='public final fun <get-day> (): com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer'
+                      GET_VAR 'val tmp: com.kizitonwose.calendar.core.CalendarDay? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<get-day>' type=com.kizitonwose.calendar.core.CalendarDay? origin=null
+                  BRANCH
+                    if: CONST Boolean type=kotlin.Boolean value=true
+                    then: BLOCK type=kotlin.Unit origin=null
+                      CALL 'public final fun throwUninitializedPropertyAccessException (propertyName: kotlin.String): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+                        ARG propertyName: CONST String type=kotlin.String value="day"
+            FUN DEFAULT_PROPERTY_ACCESSOR name:<set-day> visibility:public modality:FINAL returnType:kotlin.Unit
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+              VALUE_PARAMETER kind:Regular name:<set-?> index:1 type:com.kizitonwose.calendar.core.CalendarDay
+              correspondingProperty: PROPERTY name:day visibility:public modality:FINAL [lateinit,var]
+              BLOCK_BODY
+                SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:day type:com.kizitonwose.calendar.core.CalendarDay? visibility:public' type=kotlin.Unit origin=null
+                  receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<set-day>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                  value: GET_VAR '<set-?>: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer.<set-day>' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+            FUN FAKE_OVERRIDE name:<get-view> visibility:public modality:FINAL returnType:android.view.View [fake_override]
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.kizitonwose.calendar.view.ViewContainer
+              correspondingProperty: PROPERTY FAKE_OVERRIDE name:view visibility:public modality:FINAL [fake_override,val]
+              overridden:
+                public final fun <get-view> (): android.view.View declared in com.kizitonwose.calendar.view.ViewContainer
+            FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+              VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+              overridden:
+                public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.ViewContainer
+            FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+              overridden:
+                public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.ViewContainer
+            FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+              VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+              overridden:
+                public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.ViewContainer
+            FUN LOCAL_FUNCTION_FOR_LAMBDA name:_init_$lambda$0 visibility:private modality:FINAL returnType:kotlin.Unit
+              VALUE_PARAMETER kind:Regular name:it index:0 type:@[FlexibleNullability] android.view.View?
+              BLOCK_BODY
+                RETURN type=kotlin.Nothing from='private final fun _init_$lambda$0 (it: @[FlexibleNullability] android.view.View?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer'
+                  GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:INSTANCE type:kotlin.Unit visibility:public [final,static] declared in kotlin.Unit' type=kotlin.Unit origin=null
+            FIELD FIELD_FOR_OUTER_THIS name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final]
+          FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+            VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+            overridden:
+              public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.MonthHeaderFooterBinder
+          FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+            overridden:
+              public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.MonthHeaderFooterBinder
+          FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+            VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+            overridden:
+              public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.MonthHeaderFooterBinder
+          FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final]
+          FIELD FIELD_FOR_CAPTURED_VALUE name:$daysOfWeek type:kotlin.collections.List<java.time.DayOfWeek> visibility:public/*package*/ [final]
+          FUN LOCAL_FUNCTION_FOR_LAMBDA name:bind$lambda$0 visibility:private modality:FINAL returnType:android.widget.TextView
+            VALUE_PARAMETER kind:Regular name:it index:0 type:android.view.View
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='private final fun bind$lambda$0 (it: android.view.View): android.widget.TextView declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                BLOCK type=android.widget.TextView origin=null
+                  CALL 'public final fun checkNotNull (object: kotlin.Any?, message: kotlin.String): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+                    ARG object: GET_VAR 'it: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$0' type=android.view.View origin=null
+                    ARG message: CONST String type=kotlin.String value="null cannot be cast to non-null type android.widget.TextView"
+                  TYPE_OP type=android.widget.TextView? origin=CAST typeOperand=android.widget.TextView?
+                    GET_VAR 'it: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$0' type=android.view.View origin=null
+          FUN INLINE_LAMBDA name:bind$lambda$1 visibility:private modality:FINAL returnType:kotlin.Unit
+            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$daysOfWeek index:0 type:kotlin.collections.List<java.time.DayOfWeek>
+            VALUE_PARAMETER kind:Regular name:index index:1 type:kotlin.Int
+            VALUE_PARAMETER kind:Regular name:textView index:2 type:android.widget.TextView
+            BLOCK_BODY
+              VAR name:$i$a$-forEachIndexed-MainActivity$onCreate$5$bind$2 type:kotlin.Int [val]
+                CONST Int type=kotlin.Int value=0
+              VAR name:dayOfWeek type:java.time.DayOfWeek [val]
+                CALL 'public abstract fun get (index: kotlin.Int): E of kotlin.collections.List [operator] declared in kotlin.collections.List' type=java.time.DayOfWeek origin=GET_ARRAY_ELEMENT
+                  ARG <this>: GET_VAR '$daysOfWeek: kotlin.collections.List<java.time.DayOfWeek> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$1' type=kotlin.collections.List<java.time.DayOfWeek> origin=null
+                  ARG index: GET_VAR 'index: kotlin.Int declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$1' type=kotlin.Int origin=null
+              VAR name:title type:@[FlexibleNullability] kotlin.String? [val]
+                CALL 'public open fun getDisplayName (p0: @[FlexibleNullability] java.time.format.TextStyle?, p1: @[FlexibleNullability] java.util.Locale?): @[FlexibleNullability] kotlin.String? declared in java.time.DayOfWeek' type=@[FlexibleNullability] kotlin.String? origin=null
+                  ARG <this>: GET_VAR 'val dayOfWeek: java.time.DayOfWeek [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$1' type=java.time.DayOfWeek origin=null
+                  ARG p0: GET_FIELD 'FIELD FIELD_FOR_ENUM_ENTRY name:SHORT type:java.time.format.TextStyle visibility:public [final,static] declared in java.time.format.TextStyle' type=java.time.format.TextStyle origin=null
+                  ARG p1: CALL 'public open fun getDefault (): @[FlexibleNullability] java.util.Locale? declared in java.util.Locale' type=@[FlexibleNullability] java.util.Locale? origin=null
+              CALL 'public final fun setText (p0: @[FlexibleNullability] kotlin.CharSequence?): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=EQ
+                ARG <this>: GET_VAR 'textView: android.widget.TextView declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$1' type=android.widget.TextView origin=null
+                ARG p0: GET_VAR 'val title: @[FlexibleNullability] kotlin.String? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind$lambda$1' type=@[FlexibleNullability] kotlin.String? origin=null
+          FUN BRIDGE name:create visibility:public modality:OPEN returnType:com.kizitonwose.calendar.view.ViewContainer
+            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER BRIDGE kind:Regular name:view index:1 type:android.view.View
+            EXPRESSION_BODY
+              TYPE_OP type=com.kizitonwose.calendar.view.ViewContainer origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.view.ViewContainer
+                RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                  CALL 'public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=BRIDGE_DELEGATION
+                    ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                    ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.create' type=android.view.View origin=null
+          FUN BRIDGE name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+            VALUE_PARAMETER BRIDGE kind:Regular name:container index:1 type:com.kizitonwose.calendar.view.ViewContainer
+            VALUE_PARAMETER BRIDGE kind:Regular name:data index:2 type:kotlin.Any?
+            EXPRESSION_BODY
+              TYPE_OP type=kotlin.Unit origin=IMPLICIT_CAST typeOperand=kotlin.Unit
+                RETURN type=kotlin.Nothing from='public open fun bind (container: com.kizitonwose.calendar.view.ViewContainer, data: kotlin.Any?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>'
+                  CALL 'public open fun bind (container: com.example.calendar.MainActivity.onCreate.MonthViewContainer, data: com.kizitonwose.calendar.core.CalendarMonth): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                    ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                    ARG container: TYPE_OP type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=IMPLICIT_CAST typeOperand=com.example.calendar.MainActivity.onCreate.MonthViewContainer
+                      GET_VAR 'container: com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.kizitonwose.calendar.view.ViewContainer origin=null
+                    ARG data: TYPE_OP type=com.kizitonwose.calendar.core.CalendarMonth origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.core.CalendarMonth
+                      GET_VAR 'data: kotlin.Any? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=kotlin.Any? origin=null
+        BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+          CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?, $daysOfWeek: kotlin.collections.List<java.time.DayOfWeek>) [primary] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=OBJECT_LITERAL
+            ARG $calendarView: GET_VAR 'val calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? [val] declared in com.example.calendar.MainActivity.onCreate' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+            ARG $daysOfWeek: GET_VAR 'val daysOfWeek: kotlin.collections.List<java.time.DayOfWeek> [val] declared in com.example.calendar.MainActivity.onCreate' type=kotlin.collections.List<java.time.DayOfWeek> origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:53)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:46)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:446)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:413)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:425)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:89)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:27)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:79)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:45)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:176)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:39)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:499)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:416)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.tryCompileIncrementally$lambda$0$compile(IncrementalCompilerRunner.kt:249)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.tryCompileIncrementally(IncrementalCompilerRunner.kt:267)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:119)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:684)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:94)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1810)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+  VALUE_PARAMETER kind:Regular name:container index:1 type:com.example.calendar.MainActivity.onCreate.MonthViewContainer
+  VALUE_PARAMETER kind:Regular name:data index:2 type:com.kizitonwose.calendar.core.CalendarMonth
+  overridden:
+    public abstract fun bind (container: Container of com.kizitonwose.calendar.view.MonthHeaderFooterBinder, data: com.kizitonwose.calendar.core.CalendarMonth): kotlin.Unit [fake_override] declared in com.kizitonwose.calendar.view.MonthHeaderFooterBinder
+  BLOCK_BODY
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=EQEQ
+          ARG arg0: CALL 'public open fun getTag (): @[FlexibleNullability] kotlin.Any? [fake_override] declared in android.view.ViewGroup' type=@[FlexibleNullability] kotlin.Any? origin=GET_PROPERTY
+            ARG <this>: CALL 'public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=android.view.ViewGroup origin=GET_PROPERTY
+              ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+          ARG arg1: CONST Null type=kotlin.Nothing? value=null
+        then: BLOCK type=kotlin.Unit origin=null
+          CALL 'public open fun setTag (p0: @[FlexibleNullability] kotlin.Any?): kotlin.Unit [fake_override] declared in android.view.ViewGroup' type=kotlin.Unit origin=EQ
+            ARG <this>: CALL 'public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=android.view.ViewGroup origin=GET_PROPERTY
+              ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+            ARG p0: CALL 'public final fun <get-yearMonth> (): java.time.YearMonth declared in com.kizitonwose.calendar.core.CalendarMonth' type=java.time.YearMonth origin=GET_PROPERTY
+              ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarMonth declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarMonth origin=null
+          CALL 'public final fun forEachIndexed <T> (<this>: kotlin.sequences.Sequence<T of kotlin.sequences.SequencesKt.forEachIndexed>, action: kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, T of kotlin.sequences.SequencesKt.forEachIndexed, kotlin.Unit>): kotlin.Unit [inline] declared in kotlin.sequences.SequencesKt' type=kotlin.Unit origin=null
+            TYPE_ARG T: android.widget.TextView
+            ARG <this>: CALL 'public final fun map <T, R> (<this>: kotlin.sequences.Sequence<T of kotlin.sequences.SequencesKt.map>, transform: kotlin.Function1<T of kotlin.sequences.SequencesKt.map, R of kotlin.sequences.SequencesKt.map>): kotlin.sequences.Sequence<R of kotlin.sequences.SequencesKt.map> declared in kotlin.sequences.SequencesKt' type=kotlin.sequences.Sequence<android.widget.TextView> origin=null
+              TYPE_ARG T: android.view.View
+              TYPE_ARG R: android.widget.TextView
+              ARG <this>: CALL 'public final fun <get-children> (<this>: android.view.ViewGroup): kotlin.sequences.Sequence<android.view.View> declared in androidx.core.view.ViewGroupKt' type=kotlin.sequences.Sequence<android.view.View> origin=GET_PROPERTY
+                ARG <this>: CALL 'public final fun <get-titlesContainer> (): android.view.ViewGroup declared in com.example.calendar.MainActivity.onCreate.MonthViewContainer' type=android.view.ViewGroup origin=GET_PROPERTY
+                  ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.MonthViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.MonthViewContainer origin=null
+              ARG transform: BLOCK type=kotlin.Function1<android.view.View, android.widget.TextView> origin=LAMBDA
+                COMPOSITE type=kotlin.Unit origin=null
+                CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=kotlin.Function1<android.view.View, android.widget.TextView> origin=null
+                  TYPE_ARG T: kotlin.Function1<android.view.View, android.widget.TextView>
+                  ARG dynamicCall: CALL 'public final fun invoke (): kotlin.Function1<android.view.View, android.widget.TextView> declared in kotlin.jvm.internal.invokeDynamic' type=kotlin.Function1<android.view.View, android.widget.TextView> origin=null
+                  ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                    ARG tag: CONST Int type=kotlin.Int value=6
+                    ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+                    ARG name: CONST String type=kotlin.String value="metafactory"
+                    ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+                    ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+                  ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+                    CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                      ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1' type=kotlin.Any
+                    RAW_FUNCTION_REFERENCE 'private final fun bind$lambda$0 (it: android.view.View): android.widget.TextView declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Any
+                    CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+                      ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: android.view.View): android.widget.TextView [fake_override,operator] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+            ARG action: BLOCK type=kotlin.Function2<kotlin.Int, android.widget.TextView, kotlin.Unit> origin=LAMBDA
+              COMPOSITE type=kotlin.Unit origin=null
+              FUNCTION_REFERENCE 'private final fun bind$lambda$1 ($daysOfWeek: kotlin.collections.List<java.time.DayOfWeek>, index: kotlin.Int, textView: android.widget.TextView): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.Function2<kotlin.Int, android.widget.TextView, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+                ARG $daysOfWeek: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$daysOfWeek type:kotlin.collections.List<java.time.DayOfWeek> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=kotlin.collections.List<java.time.DayOfWeek> origin=null
+                  receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+          CALL 'public final fun <set-dayBinder> (value: com.kizitonwose.calendar.view.MonthDayBinder<*>?): kotlin.Unit declared in com.kizitonwose.calendar.view.CalendarView' type=kotlin.Unit origin=EQ
+            ARG <this>: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+              receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+            ARG value: BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=OBJECT_LITERAL
+              CLASS CLASS name:<no name provided> modality:FINAL visibility:local superTypes:[com.kizitonwose.calendar.view.MonthDayBinder<com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer>]
+                thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                CONSTRUCTOR visibility:public/*package*/ returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> [primary]
+                  VALUE_PARAMETER BOUND_RECEIVER_PARAMETER kind:Regular name:this$0 index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$calendarView index:1 type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?
+                  VALUE_PARAMETER BOUND_RECEIVER_PARAMETER kind:Regular name:this$1 index:2 type:com.example.calendar.MainActivity.onCreate.<no name provided>
+                  BLOCK_BODY
+                    SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                      receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                      value: GET_VAR 'this$0: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.<init>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                    DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                    BLOCK type=kotlin.Unit origin=null
+                FUN name:create visibility:public modality:OPEN returnType:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                  VALUE_PARAMETER kind:Regular name:view index:1 type:android.view.View
+                  overridden:
+                    public abstract fun create (view: android.view.View): Container of com.kizitonwose.calendar.view.MonthDayBinder [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                  BLOCK_BODY
+                    RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>'
+                      CONSTRUCTOR_CALL 'public constructor <init> (this$0: com.example.calendar.MainActivity.onCreate.<no name provided>, view: android.view.View) declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                        ARG this$0: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                          receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                        ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=android.view.View origin=null
+                FUN name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+                  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                  VALUE_PARAMETER kind:Regular name:container index:1 type:com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                  VALUE_PARAMETER kind:Regular name:data index:2 type:com.kizitonwose.calendar.core.CalendarDay
+                  overridden:
+                    public abstract fun bind (container: Container of com.kizitonwose.calendar.view.MonthDayBinder, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                  BLOCK_BODY
+                    COMPOSITE type=kotlin.Unit origin=null
+                      BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                        WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                          BRANCH
+                            if: COMPOSITE type=kotlin.Boolean origin=null
+                              VAR IR_TEMPORARY_VARIABLE name:tmp0_safe_receiver type:android.widget.TextView? [val]
+                                CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                  ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                              CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                  ARG arg0: GET_VAR 'val tmp0_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                  ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                            then: CALL 'public final fun setText (p0: @[FlexibleNullability] kotlin.CharSequence?): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=EQ
+                              ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                GET_VAR 'val tmp0_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                              ARG p0: CALL 'public final fun valueOf (value: kotlin.Int): kotlin.String declared in java.lang.String' type=kotlin.String origin=null
+                                ARG value: CALL 'public open fun getDayOfMonth (): kotlin.Int declared in java.time.LocalDate' type=kotlin.Int origin=GET_PROPERTY
+                                  ARG <this>: CALL 'public final fun <get-date> (): java.time.LocalDate declared in com.kizitonwose.calendar.core.CalendarDay' type=java.time.LocalDate origin=GET_PROPERTY
+                                    ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+                          BRANCH
+                            if: CONST Boolean type=kotlin.Boolean value=true
+                            then: CONST Null type=kotlin.Nothing? value=null
+                    COMPOSITE type=kotlin.Unit origin=null
+                      WHEN type=kotlin.Unit? origin=IF
+                        BRANCH
+                          if: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=EQEQ
+                            ARG arg0: CALL 'public final fun <get-position> (): com.kizitonwose.calendar.core.DayPosition declared in com.kizitonwose.calendar.core.CalendarDay' type=com.kizitonwose.calendar.core.DayPosition origin=GET_PROPERTY
+                              ARG <this>: GET_VAR 'data: com.kizitonwose.calendar.core.CalendarDay declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.kizitonwose.calendar.core.CalendarDay origin=null
+                            ARG arg1: GET_FIELD 'FIELD FIELD_FOR_ENUM_ENTRY name:MonthDate type:com.kizitonwose.calendar.core.DayPosition visibility:public [final,static] declared in com.kizitonwose.calendar.core.DayPosition' type=com.kizitonwose.calendar.core.DayPosition origin=null
+                          then: BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                            WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                              BRANCH
+                                if: COMPOSITE type=kotlin.Boolean origin=null
+                                  VAR IR_TEMPORARY_VARIABLE name:tmp1_safe_receiver type:android.widget.TextView? [val]
+                                    CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                      ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                  CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                    ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                      ARG arg0: GET_VAR 'val tmp1_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                      ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                                then: CALL 'public open fun setTextColor (p0: kotlin.Int): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=null
+                                  ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                    GET_VAR 'val tmp1_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                  ARG p0: CONST Int type=kotlin.Int value=-1
+                              BRANCH
+                                if: CONST Boolean type=kotlin.Boolean value=true
+                                then: CONST Null type=kotlin.Nothing? value=null
+                        BRANCH
+                          if: CONST Boolean type=kotlin.Boolean value=true
+                          then: BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                            WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+                              BRANCH
+                                if: COMPOSITE type=kotlin.Boolean origin=null
+                                  VAR IR_TEMPORARY_VARIABLE name:tmp2_safe_receiver type:android.widget.TextView? [val]
+                                    CALL 'public final fun <get-textView> (): android.widget.TextView? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer' type=android.widget.TextView? origin=GET_PROPERTY
+                                      ARG <this>: GET_VAR 'container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=null
+                                  CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                    ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                      ARG arg0: GET_VAR 'val tmp2_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                      ARG arg1: CONST Null type=kotlin.Nothing? value=null
+                                then: CALL 'public open fun setTextColor (p0: kotlin.Int): kotlin.Unit declared in android.widget.TextView' type=kotlin.Unit origin=null
+                                  ARG <this>: TYPE_OP type=android.widget.TextView origin=IMPLICIT_CAST typeOperand=android.widget.TextView
+                                    GET_VAR 'val tmp2_safe_receiver: android.widget.TextView? [val] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=android.widget.TextView? origin=null
+                                  ARG p0: CONST Int type=kotlin.Int value=-7829368
+                              BRANCH
+                                if: CONST Boolean type=kotlin.Boolean value=true
+                                then: CONST Null type=kotlin.Nothing? value=null
+                FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN returnType:kotlin.Boolean [fake_override,operator]
+                  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                  VALUE_PARAMETER kind:Regular name:other index:1 type:kotlin.Any?
+                  overridden:
+                    public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN returnType:kotlin.Int [fake_override]
+                  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                  overridden:
+                    public open fun hashCode (): kotlin.Int [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN returnType:kotlin.String [fake_override]
+                  VALUE_PARAMETER kind:DispatchReceiver name:<this> index:0 type:kotlin.Any
+                  overridden:
+                    public open fun toString (): kotlin.String [fake_override] declared in com.kizitonwose.calendar.view.MonthDayBinder
+                FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.example.calendar.MainActivity.onCreate.<no name provided> visibility:public/*package*/ [final]
+                FUN BRIDGE name:create visibility:public modality:OPEN returnType:com.kizitonwose.calendar.view.ViewContainer
+                  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                  VALUE_PARAMETER BRIDGE kind:Regular name:view index:1 type:android.view.View
+                  EXPRESSION_BODY
+                    TYPE_OP type=com.kizitonwose.calendar.view.ViewContainer origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.view.ViewContainer
+                      RETURN type=kotlin.Nothing from='public open fun create (view: android.view.View): com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>'
+                        CALL 'public open fun create (view: android.view.View): com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=BRIDGE_DELEGATION
+                          ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                          ARG view: GET_VAR 'view: android.view.View declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.create' type=android.view.View origin=null
+                FUN BRIDGE name:bind visibility:public modality:OPEN returnType:kotlin.Unit
+                  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>
+                  VALUE_PARAMETER BRIDGE kind:Regular name:container index:1 type:com.kizitonwose.calendar.view.ViewContainer
+                  VALUE_PARAMETER BRIDGE kind:Regular name:data index:2 type:kotlin.Any?
+                  EXPRESSION_BODY
+                    TYPE_OP type=kotlin.Unit origin=IMPLICIT_CAST typeOperand=kotlin.Unit
+                      RETURN type=kotlin.Nothing from='public open fun bind (container: com.kizitonwose.calendar.view.ViewContainer, data: kotlin.Any?): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>'
+                        CALL 'public open fun bind (container: com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer, data: com.kizitonwose.calendar.core.CalendarDay): kotlin.Unit declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                          ARG <this>: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                          ARG container: TYPE_OP type=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer origin=IMPLICIT_CAST typeOperand=com.example.calendar.MainActivity.onCreate.<no name provided>.DayViewContainer
+                            GET_VAR 'container: com.kizitonwose.calendar.view.ViewContainer declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=com.kizitonwose.calendar.view.ViewContainer origin=null
+                          ARG data: TYPE_OP type=com.kizitonwose.calendar.core.CalendarDay origin=IMPLICIT_CAST typeOperand=com.kizitonwose.calendar.core.CalendarDay
+                            GET_VAR 'data: kotlin.Any? declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>.bind' type=kotlin.Any? origin=null
+              BLOCK type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=null
+                CONSTRUCTOR_CALL 'public/*package*/ constructor <init> (this$0: com.example.calendar.MainActivity.onCreate.<no name provided>, $calendarView: @[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView?, this$1: com.example.calendar.MainActivity.onCreate.<no name provided>) [primary] declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided>.bind.<no name provided> origin=OBJECT_LITERAL
+                  ARG this$0: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                  ARG $calendarView: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$calendarView type:@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? visibility:public/*package*/ [final] declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=@[FlexibleNullability] com.kizitonwose.calendar.view.CalendarView? origin=null
+                    receiver: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>.bind' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+                  ARG this$1: GET_VAR '<this>: com.example.calendar.MainActivity.onCreate.<no name provided> declared in com.example.calendar.MainActivity.onCreate.<no name provided>' type=com.example.calendar.MainActivity.onCreate.<no name provided> origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:53)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:46)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:956)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.declarations.IrClass.accept(IrClass.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:530)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:544)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:416)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:213)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:567)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:580)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:530)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:535)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:232)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:129)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	... 45 more
+Caused by: java.lang.IllegalStateException: No mapping for symbol: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:com.example.calendar.MainActivity.onCreate.<no name provided>
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrFrameMap.typeOf(irCodegenUtils.kt:57)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitGetValue(ExpressionCodegen.kt:750)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitGetValue(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrGetValue.accept(IrGetValue.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:213)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generateConstructorArguments(ExpressionCodegen.kt:707)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitConstructorCall(ExpressionCodegen.kt:696)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitConstructorCall(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrConstructorCall.accept(IrConstructorCall.kt:27)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:530)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:544)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:416)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:530)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:544)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:416)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:213)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:567)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:580)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:530)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:544)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:416)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:1054)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrWhen.accept(IrWhen.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:530)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:535)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:134)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:232)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:129)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	... 72 more
+
+
