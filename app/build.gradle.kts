@@ -48,7 +48,7 @@ dependencies {
     // The view calendar library for Android
     implementation("com.kizitonwose.calendar:view:2.9.0")
 
+    implementation(libs.jsoup)
+    implementation(libs.kotlinx.coroutines.android)
+
 }
-
-
-
